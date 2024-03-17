@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+} 
+
+.main {
+    background-color: #131619;
+    height: 100dvh;
+    display: flex;
+}
+
+.main2 {
+    background-color: #131619;
+    height: 100dvh;
+}
+
+
+.leftside {
+    margin-left: auto;
+}
+
+.rightside {
+    margin-left: auto;
+}
+
+/* input[type=text], input[type=email] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #060708;
+    background-image: url('../public/images/email.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    color: white;
+  }
+
+/* 
+
+  input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #060708;
+    background-image: url('../public/images/pass.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    color: white;
+  } */
+
+
+  .email-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #060708;
+    background-image: url('../public/images/email.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    color: white;
+  }
+
+  .password-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #060708;
+    background-image: url('../public/images/pass.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    color: white;
+  }
+
+  .signup-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #060708;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0 12px 10px;
+    color: white;
+  }
+
+  .reg-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 16px;
+    background-color: #131619;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    text-align: center;
+  }
+
+  .email-input:focus, .password-input:focus  {
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(45deg, #82DBF7, #B6F09C) 1;
+    outline: none;
+  }
+
+  .signup-input:focus {
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(45deg, #82DBF7, #B6F09C) 1;
+    outline: none;
+  }
+
+  .reg-input:focus {
+    border-style: solid;
+    border-width: 2px;
+    border-image: gray;
+    outline: none;
+  }
+
+
+.log {
+    background: #B6F09C;
+    display: block;
+    width: 100%;
+}
+
+.access {
+    background: #B6F09C;
+}
+
+.wks {
+    background-color: #1A1D21;
+    display: block;
+    width: 100%;
+    color: #9B9C9E;
+}
+
+.back {
+    background-color: #1A1D21;
+}
+
+.creative {
+    background: linear-gradient( #4d62e5, #87ddee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.forgot {
+    background: linear-gradient( #82DBF7, #B6F09C);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
+.splash {
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+@media screen and (max-width:640px) {
+    .rightside {
+        display: none;
+    }
+
+    .divider-image {
+        max-width: 37%;
+    }
+
+    .leftside {
+        margin-right:auto;
+    }
+
+    .main2 {
+        grid: unset;
+    }
+
+    .si-form {
+        display: block;
+    }
+
+}
+
+.disp {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  height: 100vh;
+}
+
+.tab {
+  grid-row: 1/4;
+}
+
+.nav {
+  grid-row: 1/2;
+}
+
+.nav, .content {
+  grid-column: 2/4;
+}
+
+.content {
+  background-color: #131619;
+  grid-row: 2/4;
+}
+
+
+.tab, .nav {
+  background-color: #0D0F10 ;
+}
+
+
+.profile, .s-cards {
+  background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+}
+
+.s-cards {
+  padding: 30px 50px;
+}
+
+.pr {
+  border-radius: 0.25rem;
+
+}
+
+.pr:hover {
+  background: linear-gradient(#2a2b2b,#232325);
+}
+
+.nav2:hover {
+  border-bottom: 4px #B6F09C solid;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+}
+
+.ui {
+  background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+  filter: drop-shadow(0px 0px 64px rgba(182, 240, 156, 0.16));
+  padding: 1em;
+  width: fit-content;
+  border-radius: 56px;
+}
+
+
+.card {
+  background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+  border-radius: 12px;
+}
+
+.ask {
+  background: #0D0F10;
+border-radius: 20px;
+padding: 20px 40px 20px 50px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ask {
+/* Adjust padding to make space for the images */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-container img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.microphone {
+  left: 10px;
+}
+
+.attachments {
+  right: 10px;
+}
+
+.send {
+  right: 50px; /* Adjust distance from right as needed */
+}
+
+.actions{
+  background-color: #1A1D21;
+}
+
+.chat-box1 {
+  border: 1px solid #1A1D21;
+}
+
+
+#hero2 {
+  display: none;
+}
+
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 20px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
