@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 
+{/* the form is a bit too wide on xl+ screens */}
 let Signup = () => {
     return (
         <div className="main2 grid grid-cols-3">
 
-        <div className='col-span-2 mx-12 grid'>
+        <div className='col-span-2 mx-12 grid xl:py-10 xl:w-[70%] xl:mx-auto'> {/* added  some styling for xl+ screens,the form was looking a bit too big */}
             <div className='flex justify-between items-start'>
-                <img className='logo' src='/images/Logo.svg' alt="logo" />
+                <img className='logo' src='/images/Logo.svg' alt="logo" />{/* can't find the styling for logo */}
                 <p className='text-gray-400'><Link to="/login"><span className='forgot'>Login</span></Link></p>
             </div>
 

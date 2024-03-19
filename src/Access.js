@@ -3,7 +3,7 @@ let Access = () => {
     return (
         <div className='main'>
 
-        <div className='leftside grid gap-y-4'>
+        <div className='leftside grid gap-y-4 xl:py-10 '>
             <img className='logo' src='/images/Logo.svg' alt="logo" />
     
         <div className="m-auto">
@@ -11,8 +11,8 @@ let Access = () => {
         </div>
 
         <div>
-            <p className="bold text-4xl pb-2 text-white">Sophia, Kamil, Emily and 2,012 <br /> others are already here!</p>
-            <p className="text-gray-400">But... it looks like you don't have access to this workspace.</p>
+            <p className="bold text-4xl xl:text-[2rem] xl:leading-[2rem] pb-2 text-white">Sophia, Kamil, Emily and 2,012 <br /> others are already here!</p>
+            <p className="text-gray-400 ">But... it looks like you don't have access to this workspace.</p>
         </div>
 
         <div className="mx-auto grid content-baseline">

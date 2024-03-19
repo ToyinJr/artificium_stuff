@@ -3,7 +3,7 @@ let Register = () => {
     return (
         <div className="main2 flex">
 
-            <div className="mx-12 grid place-content-around">
+            <div className="mx-12 grid place-content-around xl:w-[45%] xl:mx-auto">
             <img className='logo' src='/images/Logo.svg' alt="logo" />
             
             <div className="">
@@ -20,6 +20,8 @@ let Register = () => {
               <p className='text-gray-400 text-xs'>or</p>
               <img className='divider-image grow'  src='/images/Divider.svg' alt='divider' />
             </div>
+
+            {/* you could've built the divider with html and css */}
 
             <button className='rounded-md wks p-2'>Create free new workspace</button>
 

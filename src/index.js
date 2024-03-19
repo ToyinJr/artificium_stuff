@@ -19,7 +19,7 @@ root.render(
   <div className='full'>
     <BrowserRouter>
       <Routes>
-        <Route index  element={<Login />} />
+      <Route index  element={<Login />} />    {/*can be replaced with path = "/" */}
         <Route path='/login'  element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/register' element={<Register />} />
@@ -33,7 +33,7 @@ root.render(
     
   </div>
 
-  
+  //this should have been in your app.jsx
 
 
 );
