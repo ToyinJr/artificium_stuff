@@ -1,16 +1,19 @@
-{
-    let hero1 = document.getElementById('hero1');
-    let hero2 = document.getElementById('hero2');
-    let artificium = document.getElementById('artificium');
-    let chat = document.getElementById('chat');
-
-    // chat.addEventListener('click', () => {
-    //     hero1.style.display = 'none';
-    //     hero2.style.display = 'block';
-    // })
-}
+import {useRef} from 'react';
 
 let Welcome = () => {
+    let hero1 = useRef();
+    let hero2 = useRef();
+
+    let show2 = () => {
+    hero2.current.style.display = "block";
+    hero1.current.style.display = "none";
+    }
+
+    let show1 = () => {
+        hero1.current.style.display = "block";
+        hero2.current.style.display = "none";
+    }
+
     return (
         <div className="main2">
         <div className="text-white gap-4 disp">
@@ -89,15 +92,15 @@ let Welcome = () => {
                 </div>
 
                 <div className="flex gap-5 self-end">
-                    <div className="flex gap-1 nav2" id="artificium"><img src="/images/artificium.svg" alt="artificium logo"/>Artificium</div>
-                    <div className="flex gap-1 nav2" id="chat"><img src="/images/chat.svg" alt="chat" />Chat</div>
+                    <div className="flex gap-1 nav2" id="artificium" onClick={show1}><img src="/images/artificium.svg" alt="artificium logo"/>Artificium</div>
+                    <div className="flex gap-1 nav2" id="chat" onClick={show2}><img src="/images/chat.svg" alt="chat" />Chat</div>
                     <div className="flex gap-1 nav2"><img src="/images/library.svg" alt="library" />Library</div>
                 </div>
             </div>
 
             <div className="grid content mx-4 my-1">
                
-                <div  id="hero1">
+                <div id="hero1" ref={hero1}>
                 <div className="hero p-6">
                 <p>Innovation StarterPack</p>
                 <p className="text-gray-400">Kickstart your innovation process with our comprehensive selection of predefined prompts.</p>
@@ -142,7 +145,7 @@ let Welcome = () => {
                 </div>
                 </div>
 
-                <div id="hero2">
+                <div ref={hero2} style={{display : "none"}}>
                     <div className="chat-box1 p-2 rounded-lg flex gap-3">
 
                     <div className="avatar">
