@@ -1,4 +1,4 @@
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 let Access2 = () => {
     return (
         <div className='main'>
@@ -13,7 +13,7 @@ let Access2 = () => {
 
         <div className="flex justify-evenly items-center pt-5">
           <button><p className="text-gray-400">Change workspace</p></button>
-          <button className='p-3 rounded-md access'>Join Now</button>
+         <Link to={'/welcome'}> <button className='p-3 rounded-md access'>Join Now</button></Link>
         </div>
 
         <div className="flex items-center justify-between gap-4 pt-10">

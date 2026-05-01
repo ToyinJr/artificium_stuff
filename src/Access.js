@@ -18,7 +18,7 @@ let Access = () => {
         <div className="mx-auto grid content-baseline">
         <Link to='/welcome'><button className='p-2 rounded-md access px-5'>Access request</button></Link>
         <p className="text-center text-gray-400">or</p>
-        <div className="place-self-center"><button className='p-2 px-5 rounded-md back text-gray-400'>Back</button></div>
+        <Link to={'/login'}><div className="place-self-center"><button className='p-2 px-5 rounded-md back text-gray-400'>Back</button></div></Link>
         </div>
 
         <div className="flex justify-between text-gray-400 items-end">
