@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-{/* the form is a bit too wide on xl+ screens */}
+/* the form is a bit too wide on xl+ screens */
 let Signup = () => {
     return (
         <div className="main2 grid grid-cols-3">
